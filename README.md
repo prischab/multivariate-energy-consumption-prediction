@@ -26,12 +26,14 @@ The workflow followed in this project includes:
 	•	Missing values marked as ? were handled using time-based linear interpolation
 	•	Data was resampled from minute-level to hourly averages
 	•	Features were scaled using Min-Max normalization
-	•	Data was split chronologically into 80% training and 20% testing sets  ￼
+	•	Data was split chronologically into 80% training and 20% testing sets 
+	￼
 	2.	Feature engineering
 	•	Lag features were created from Global active power:
 	•	gap lag 1
 	•	gap lag 2
 	•	gap lag 3  ￼
+	
 	3.	Feature selection using RFE
 	•	RFE was applied with a Random Forest regressor
 	•	The final model retained 9 features, including:
@@ -44,6 +46,7 @@ The workflow followed in this project includes:
 	•	gap lag 1
 	•	gap lag 2
 	•	gap lag 3  ￼
+	
 	4.	LSTM model design
 	•	Input window size: 24 time steps
 	•	Architecture:
@@ -55,7 +58,8 @@ The workflow followed in this project includes:
 	•	Learning rate: 1e-3
 	•	Loss: Mean Squared Error
 	•	Batch size: 32
-	•	Early stopping on validation loss  ￼
+	•	Early stopping on validation loss  
+	￼
 	5.	Baseline model
 	•	A Random Forest Regressor with 500 estimators was used as the non-sequential baseline on the same final feature set.  ￼
 
