@@ -67,6 +67,7 @@ The workflow followed in this project includes:
 Evaluation Metrics
 
 The models were evaluated using:
+
 	•	MAE – Mean Absolute Error
 	•	RMSE – Root Mean Squared Error
 	•	R² – Coefficient of Determination
@@ -75,12 +76,14 @@ The models were evaluated using:
 Results
 
 Random Forest Baseline
+
 	•	MAE: 0.01654
 	•	RMSE: 0.028486
 	•	R²: 0.99933
 	•	MAPE: 1.72%  ￼
 
 RFE–LSTM Model
+
 	•	MAE: 0.47297
 	•	RMSE: 0.69454
 	•	R²: 0.59988
@@ -89,6 +92,7 @@ RFE–LSTM Model
 The Random Forest baseline outperformed the current RFE–LSTM configuration across all reported metrics. However, the RFE–LSTM still captured meaningful temporal patterns and achieved a moderate R² of about 0.60, showing that the sequence model learned useful structure from the data.  ￼
 
 Key Findings
+
 	•	RFE helped build a compact and interpretable feature set
 	•	Lag features improved short-horizon forecasting stability
 	•	The model remained relatively stable for RFE feature counts between 8 and 12
@@ -98,6 +102,7 @@ Key Findings
 Applications
 
 This project can support use cases such as:
+
 	•	household load forecasting
 	•	demand response systems
 	•	energy efficiency planning
@@ -108,6 +113,7 @@ This project can support use cases such as:
 Future Improvements
 
 Possible future enhancements include:
+
 	•	adding external variables such as weather, occupancy, and pricing
 	•	experimenting with BiLSTM, GRU, and Transformer-based models
 	•	applying hyperparameter optimization using GA or PSO
