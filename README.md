@@ -22,6 +22,7 @@ The project uses the UCI Individual Household Electric Power Consumption dataset
 Methodology
 
 The workflow followed in this project includes:
+
 	1.	Data preprocessing
 	•	Missing values marked as ? were handled using time-based linear interpolation
 	•	Data was resampled from minute-level to hourly averages
